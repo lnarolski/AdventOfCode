@@ -1,0 +1,89 @@
+﻿  Star2.cpp
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(74,49): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(76,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(76,41): warning C4244:         with
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(76,41): warning C4244:         [
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(76,41): warning C4244:             _Ty=__int64
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(76,41): warning C4244:         ]
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(78,71): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(80,40): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(80,40): warning C4244:         with
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(80,40): warning C4244:         [
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(80,40): warning C4244:             _Ty=__int64
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(80,40): warning C4244:         ]
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(87,50): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(89,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(89,41): warning C4244:         with
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(89,41): warning C4244:         [
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(89,41): warning C4244:             _Ty=__int64
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(89,41): warning C4244:         ]
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(91,72): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(93,40): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(93,40): warning C4244:         with
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(93,40): warning C4244:         [
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(93,40): warning C4244:             _Ty=__int64
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(93,40): warning C4244:         ]
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(100,49): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(102,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(102,41): warning C4244:         with
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(102,41): warning C4244:         [
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(102,41): warning C4244:             _Ty=__int64
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(102,41): warning C4244:         ]
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(104,71): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(106,40): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(106,40): warning C4244:         with
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(106,40): warning C4244:         [
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(106,40): warning C4244:             _Ty=__int64
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(106,40): warning C4244:         ]
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(158,30): warning C4244: '=': conversion from '_Ty' to 'long', possible loss of data
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(158,30): warning C4244:         with
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(158,30): warning C4244:         [
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(158,30): warning C4244:             _Ty=__int64
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(158,30): warning C4244:         ]
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(166,30): warning C4244: '=': conversion from '_Ty' to 'long', possible loss of data
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(166,30): warning C4244:         with
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(166,30): warning C4244:         [
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(166,30): warning C4244:             _Ty=__int64
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(166,30): warning C4244:         ]
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(236,160): warning C4244: '+=': conversion from '_Ty' to 'long', possible loss of data
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(236,160): warning C4244:         with
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(236,160): warning C4244:         [
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(236,160): warning C4244:             _Ty=__int64
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(236,160): warning C4244:         ]
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(250,50): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(252,42): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(252,42): warning C4244:         with
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(252,42): warning C4244:         [
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(252,42): warning C4244:             _Ty=__int64
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(252,42): warning C4244:         ]
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(254,72): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(256,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(256,41): warning C4244:         with
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(256,41): warning C4244:         [
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(256,41): warning C4244:             _Ty=__int64
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(256,41): warning C4244:         ]
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(263,51): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(265,42): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(265,42): warning C4244:         with
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(265,42): warning C4244:         [
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(265,42): warning C4244:             _Ty=__int64
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(265,42): warning C4244:         ]
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(267,73): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(269,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(269,41): warning C4244:         with
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(269,41): warning C4244:         [
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(269,41): warning C4244:             _Ty=__int64
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(269,41): warning C4244:         ]
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(276,50): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(278,42): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(278,42): warning C4244:         with
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(278,42): warning C4244:         [
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(278,42): warning C4244:             _Ty=__int64
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(278,42): warning C4244:         ]
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(280,72): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(282,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(282,41): warning C4244:         with
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(282,41): warning C4244:         [
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(282,41): warning C4244:             _Ty=__int64
+D:\Advent of Code\9\Star2\Star2\Star2.cpp(282,41): warning C4244:         ]
+  Star2.vcxproj -> D:\Advent of Code\9\Star2\Star2\x64\Debug\Star2.exe
