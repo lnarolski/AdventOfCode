@@ -1,0 +1,6 @@
+﻿  main.cpp
+D:\Advent of Code\10\Star2\main.cpp(25,26): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\10\Star2\main.cpp(25,60): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\10\Star2\main.cpp(84,12): warning C4018: '<': signed/unsigned mismatch
+D:\Advent of Code\10\Star2\main.cpp(40): warning C4715: 'CheckQuarter': not all control paths return a value
+  Star2.vcxproj -> D:\Advent of Code\10\Star2\Debug\Star2.exe
