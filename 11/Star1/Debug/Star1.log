@@ -1,0 +1,383 @@
+﻿  main.cpp
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(67,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(67,41): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(67,41): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(67,41): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(67,41): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(71,40): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(71,40): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(71,40): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(71,40): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(71,40): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(73,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(80,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(80,41): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(80,41): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(80,41): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(80,41): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(84,40): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(84,40): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(84,40): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(84,40): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(84,40): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(86,45): warning C4018: '>': signed/unsigned mismatch
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(93,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(93,41): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(93,41): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(93,41): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(93,41): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(97,40): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(97,40): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(97,40): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(97,40): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(97,40): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(99,44): warning C4018: '>': signed/unsigned mismatch
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,28): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,28): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,28): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,28): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,28): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,127): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,127): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,127): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,127): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,127): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,154): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,154): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,154): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,154): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,154): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,272): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,272): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,272): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,272): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,272): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,299): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,299): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,299): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,299): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(111,299): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,27): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,27): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,27): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,27): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,27): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,142): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,142): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,142): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,142): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,142): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,169): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,169): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,169): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,169): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,169): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,287): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,287): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,287): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,287): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,287): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,314): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,314): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,314): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,314): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(117,314): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,28): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,28): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,28): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,28): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,28): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,127): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,127): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,127): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,127): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,127): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,154): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,154): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,154): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,154): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,154): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,272): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,272): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,272): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,272): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,272): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,299): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,299): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,299): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,299): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(125,299): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,27): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,27): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,27): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,27): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,27): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,142): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,142): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,142): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,142): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,142): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,169): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,169): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,169): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,169): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,169): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,287): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,287): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,287): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,287): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,287): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,314): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,314): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,314): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,314): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(131,314): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(137,98): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(137,98): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(137,98): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(137,98): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(137,98): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(137,125): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(137,125): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(137,125): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(137,125): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(137,125): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(142,121): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(142,121): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(142,121): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(142,121): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(142,121): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(142,148): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(142,148): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(142,148): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(142,148): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(142,148): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(149,102): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(149,102): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(149,102): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(149,102): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(149,102): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(149,129): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(149,129): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(149,129): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(149,129): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(149,129): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(151,105): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(151,105): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(151,105): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(151,105): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(151,105): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(151,132): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(151,132): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(151,132): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(151,132): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(151,132): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(151,30): warning C4244: '=': conversion from '_Ty' to 'long', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(151,30): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(151,30): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(151,30): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(151,30): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(157,102): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(157,102): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(157,102): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(157,102): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(157,102): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(157,129): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(157,129): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(157,129): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(157,129): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(157,129): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(159,105): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(159,105): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(159,105): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(159,105): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(159,105): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(159,132): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(159,132): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(159,132): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(159,132): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(159,132): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(159,30): warning C4244: '=': conversion from '_Ty' to 'long', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(159,30): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(159,30): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(159,30): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(159,30): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,103): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,103): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,103): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,103): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,103): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,130): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,130): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,130): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,130): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,130): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,248): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,248): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,248): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,248): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,248): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,275): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,275): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,275): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,275): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(167,275): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(169,29): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(169,29): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(169,29): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(169,29): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(169,29): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(175,29): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(175,29): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(175,29): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(175,29): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(175,29): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,103): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,103): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,103): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,103): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,103): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,130): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,130): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,130): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,130): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,130): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,248): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,248): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,248): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,248): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,248): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,275): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,275): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,275): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,275): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(182,275): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(184,28): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(184,28): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(184,28): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(184,28): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(184,28): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(190,28): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(190,28): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(190,28): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(190,28): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(190,28): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,103): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,103): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,103): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,103): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,103): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,130): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,130): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,130): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,130): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,130): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,249): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,249): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,249): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,249): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,249): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,276): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,276): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,276): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,276): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(199,276): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(201,29): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(201,29): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(201,29): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(201,29): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(201,29): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(207,29): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(207,29): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(207,29): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(207,29): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(207,29): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,103): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,103): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,103): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,103): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,103): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,130): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,130): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,130): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,130): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,130): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,249): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,249): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,249): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,249): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,249): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,276): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,276): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,276): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,276): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(214,276): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(216,28): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(216,28): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(216,28): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(216,28): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(216,28): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(222,28): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(222,28): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(222,28): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(222,28): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(222,28): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(229,114): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(229,114): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(229,114): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(229,114): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(229,114): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(229,141): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(229,141): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(229,141): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(229,141): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(229,141): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(229,160): warning C4244: '+=': conversion from '_Ty' to 'long', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(229,160): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(229,160): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(229,160): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(229,160): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(245,42): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(245,42): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(245,42): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(245,42): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(245,42): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(249,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(249,41): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(249,41): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(249,41): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(249,41): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(251,45): warning C4018: '>': signed/unsigned mismatch
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(258,42): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(258,42): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(258,42): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(258,42): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(258,42): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(262,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(262,41): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(262,41): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(262,41): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(262,41): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(264,46): warning C4018: '>': signed/unsigned mismatch
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(271,42): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(271,42): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(271,42): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(271,42): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(271,42): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(275,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(275,41): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(275,41): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(275,41): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(275,41): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(277,45): warning C4018: '>': signed/unsigned mismatch
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(299,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(356,59): warning C4244: '=': conversion from '_Ty' to '_Ty', possible loss of data
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(356,59): warning C4244:         with
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(356,59): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(356,59): warning C4244:             _Ty=__int64
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(356,59): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(356,59): warning C4244:         and
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(356,59): warning C4244:         [
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(356,59): warning C4244:             _Ty=char
+C:\Users\user\Documents\AoC\Day11\Star1\main.cpp(356,59): warning C4244:         ]
+  Star1.vcxproj -> C:\Users\user\Documents\AoC\Day11\Star1\Debug\Star1.exe
