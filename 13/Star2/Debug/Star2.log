@@ -1,0 +1,398 @@
+﻿  main.cpp
+D:\Advent of Code\13\Star2\main.cpp(55,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(59,40): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(61,44): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\13\Star2\main.cpp(68,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(72,40): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(74,45): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\13\Star2\main.cpp(81,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(85,40): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(87,44): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\13\Star2\main.cpp(99,28): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(99,127): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(99,154): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(99,272): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(99,299): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(105,27): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(105,142): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(105,169): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(105,287): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(105,314): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(113,28): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(113,127): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(113,154): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(113,272): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(113,299): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(119,27): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(119,142): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(119,169): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(119,287): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(119,314): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(125,98): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(125,125): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(130,121): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(130,148): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(139,102): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(139,129): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(141,105): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(141,132): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(141,30): warning C4244: '=': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(147,102): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(147,129): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(149,105): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(149,132): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(149,30): warning C4244: '=': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(157,103): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(157,130): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(157,248): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(157,275): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(159,29): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(165,29): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(172,103): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(172,130): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(172,248): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(172,275): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(174,28): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(180,28): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(189,103): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(189,130): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(189,249): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(189,276): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(191,29): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(197,29): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(204,103): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(204,130): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(204,249): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(204,276): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(206,28): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(212,28): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(219,114): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(219,141): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(219,160): warning C4244: '+=': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(235,42): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(239,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(241,45): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\13\Star2\main.cpp(248,42): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(252,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(254,46): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\13\Star2\main.cpp(261,42): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(265,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(267,45): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\13\Star2\main.cpp(287,21): warning C4018: '<': signed/unsigned mismatch
+D:\Advent of Code\13\Star2\main.cpp(374,26): warning C4244: '=': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(384,23): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(384,40): warning C4244: 'argument': conversion from '_Ty' to 'const unsigned int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\13\Star2\main.cpp(384,59): warning C4244: '=': conversion from '_Ty' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+          and
+          [
+              _Ty=int
+          ]
+  Star2.vcxproj -> D:\Advent of Code\13\Star2\Debug\Star2.exe

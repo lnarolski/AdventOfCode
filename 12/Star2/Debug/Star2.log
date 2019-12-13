@@ -1,14 +1,12 @@
 ﻿  Star2.cpp
-C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(21,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(36,39): warning C4244: 'argument': conversion from '__int64' to '_Ty', possible loss of data
-C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(36,39): warning C4244:         with
-C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(36,39): warning C4244:         [
-C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(36,39): warning C4244:             _Ty=long
-C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(36,39): warning C4244:         ]
-C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(47,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(61,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(63,26): warning C4018: '<': signed/unsigned mismatch
-C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(81,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(93,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(107,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(23,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(38,39): warning C4244: 'argument': conversion from '__int64' to '_Ty', possible loss of data
+C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(38,39): warning C4244:         with
+C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(38,39): warning C4244:         [
+C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(38,39): warning C4244:             _Ty=long
+C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(38,39): warning C4244:         ]
+C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(49,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(78,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(80,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\user\Documents\AoC\Day12\Star2\Star2.cpp(98,21): warning C4018: '<': signed/unsigned mismatch
   Star2.vcxproj -> C:\Users\user\Documents\AoC\Day12\Star2\Debug\Star2.exe
