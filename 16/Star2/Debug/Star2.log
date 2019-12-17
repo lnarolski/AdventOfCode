@@ -1,0 +1,4 @@
+﻿  Star2.cpp
+D:\Advent of Code\16\Star2\Star2.cpp(25,21): warning C4018: '<': signed/unsigned mismatch
+D:\Advent of Code\16\Star2\Star2.cpp(88,24): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+  Star2.vcxproj -> D:\Advent of Code\16\Star2\Debug\Star2.exe

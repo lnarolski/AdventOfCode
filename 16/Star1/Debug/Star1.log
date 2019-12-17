@@ -1,0 +1,3 @@
+﻿  Star1.cpp
+C:\Users\user\Documents\AoC\Day 16\Star1\Star1.cpp(24,21): warning C4018: '<': signed/unsigned mismatch
+  Star1.vcxproj -> C:\Users\user\Documents\AoC\Day 16\Star1\Debug\Star1.exe

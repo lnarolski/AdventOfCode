@@ -14,6 +14,7 @@
 #define OXYGEN_SYSTEM 2
 
 #define VISITED 3
+#define INTERSECTION 4
 #define EMPTY -1
 
 #include <iostream>
@@ -38,6 +39,12 @@ struct Point
 {
 	long x;
 	long y;
+};
+
+struct intersection
+{
+	Point coordinates;
+	unsigned int routes;
 };
 
 //direction TurnRight(direction robotDirection)
@@ -101,6 +108,11 @@ Point MoveRobot(Point robotPosition, direction robotDirection)
 	}
 
 	return robotPosition;
+}
+
+bool IsIntersection(Point &robotPosition, std::vector <std::vector <char>>* area)
+{
+
 }
 
 const int widthArea = 100;
@@ -440,6 +452,7 @@ int main(int argc, char* argv[])
 	input.close();
 
 	direction robotDirection = east;
+	direction robotDirectionPrev;
 	std::vector <std::vector <char>> area;
 	Point robotPosition{};
 	Point oxygenSystemPosition{};
@@ -463,6 +476,9 @@ int main(int argc, char* argv[])
 	std::mt19937 rng(dev());
 	std::uniform_int_distribution<std::mt19937::result_type> dist4(1, 4); // distribution in range [1, 4]
 	std::uniform_int_distribution<std::mt19937::result_type> dist2(0, 1); // distribution in range [0, 1]
+
+	std::vector <Point> intersections;
+	bool scanSurroundings = false;
 
 	while (!computerStop)
 	{
@@ -526,48 +542,64 @@ int main(int argc, char* argv[])
 		}
 		else if (outputValues[0] == MOVED)
 		{
-			Point newPosition = MoveRobot(robotPosition, robotDirection);
-
-			robotPosition = newPosition;
-			//robotDirection = (direction)dist4(rng);
-
-			if (area[robotPosition.y - 1][robotPosition.x] == EMPTY)
+			if (scanSurroundings)
 			{
-				robotDirection = north;
-			}
-			else if (area[robotPosition.y + 1][robotPosition.x] == EMPTY)
-			{
-				robotDirection = south;
-			}
-			else if (area[robotPosition.y][robotPosition.x + 1] == EMPTY)
-			{
-				robotDirection = east;
-			}
-			else if (area[robotPosition.y][robotPosition.x - 1] == EMPTY)
-			{
-				robotDirection = west;
+				robotDirection = robotDirectionPrev;
+				scanSurroundings = false;
 			}
 			else
 			{
-				if (area[robotPosition.y - 1][robotPosition.x] == VISITED && robotDirection != south && dist2(rng))
+				Point newPosition = MoveRobot(robotPosition, robotDirection);
+
+				robotPosition = newPosition;
+				//robotDirection = (direction)dist4(rng);
+
+				if (area[robotPosition.y - 1][robotPosition.x] == EMPTY)
 				{
 					robotDirection = north;
+					robotDirectionPrev = south;
+					scanSurroundings = true;
 				}
-				else if (area[robotPosition.y + 1][robotPosition.x] == VISITED && robotDirection != north && dist2(rng))
+				else if (area[robotPosition.y + 1][robotPosition.x] == EMPTY)
 				{
 					robotDirection = south;
+					robotDirectionPrev = south;
+					scanSurroundings = true;
 				}
-				else if (area[robotPosition.y][robotPosition.x + 1] == VISITED && robotDirection != west && dist2(rng))
+				else if (area[robotPosition.y][robotPosition.x + 1] == EMPTY)
 				{
 					robotDirection = east;
+					robotDirectionPrev = south;
+					scanSurroundings = true;
 				}
-				else if (area[robotPosition.y][robotPosition.x - 1] == VISITED && robotDirection != east && dist2(rng))
+				else if (area[robotPosition.y][robotPosition.x - 1] == EMPTY)
 				{
 					robotDirection = west;
+					robotDirectionPrev = south;
+					scanSurroundings = true;
 				}
-			}
+				else
+				{
+					if (area[robotPosition.y - 1][robotPosition.x] == VISITED && robotDirection != south && dist2(rng))
+					{
+						robotDirection = north;
+					}
+					else if (area[robotPosition.y + 1][robotPosition.x] == VISITED && robotDirection != north && dist2(rng))
+					{
+						robotDirection = south;
+					}
+					else if (area[robotPosition.y][robotPosition.x + 1] == VISITED && robotDirection != west && dist2(rng))
+					{
+						robotDirection = east;
+					}
+					else if (area[robotPosition.y][robotPosition.x - 1] == VISITED && robotDirection != east && dist2(rng))
+					{
+						robotDirection = west;
+					}
+				}
 
-			area[robotPosition.y][robotPosition.x] = VISITED;
+				area[robotPosition.y][robotPosition.x] = VISITED;
+			}
 		}
 		else
 		{
