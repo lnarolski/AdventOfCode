@@ -15,6 +15,8 @@
 
 #define VISITED 3
 #define INTERSECTION 4
+#define TO_CHECK 5
+#define OXYGEN 6
 #define EMPTY -1
 
 #include <iostream>
@@ -32,7 +34,8 @@ enum direction
 	north = 1,
 	east = 4,
 	south = 2,
-	west = 3
+	west = 3,
+	null = 5
 };
 
 struct Point
@@ -41,53 +44,11 @@ struct Point
 	long y;
 };
 
-struct intersection
+struct OxygenPath
 {
-	Point coordinates;
-	unsigned int routes;
+	direction pathDirection;
+	Point position;
 };
-
-//direction TurnRight(direction robotDirection)
-//{
-//	switch (robotDirection)
-//	{
-//	case north:
-//		robotDirection = east;
-//		break;
-//	case east:
-//		robotDirection = south;
-//		break;
-//	case south:
-//		robotDirection = west;
-//		break;
-//	case west:
-//		robotDirection = north;
-//		break;
-//	}
-//
-//	return robotDirection;
-//}
-//
-//direction TurnLeft(direction robotDirection)
-//{
-//	switch (robotDirection)
-//	{
-//	case north:
-//		robotDirection = west;
-//		break;
-//	case east:
-//		robotDirection = north;
-//		break;
-//	case south:
-//		robotDirection = east;
-//		break;
-//	case west:
-//		robotDirection = south;
-//		break;
-//	}
-//
-//	return robotDirection;
-//}
 
 Point MoveRobot(Point robotPosition, direction robotDirection)
 {
@@ -110,15 +71,86 @@ Point MoveRobot(Point robotPosition, direction robotDirection)
 	return robotPosition;
 }
 
-bool IsIntersection(Point &robotPosition, std::vector <std::vector <char>>* area)
+direction GetDirection(int input)
 {
+	switch (input)
+	{
+	case 0:
+		return north;
+		break;
+	case 1:
+		return east;
+		break;
+	case 2:
+		return south;
+		break;
+	case 3:
+		return west;
+		break;
+	}
+}
 
+direction OppositeDirection(direction input)
+{
+	switch (input)
+	{
+	case north:
+		return south;
+		break;
+	case south:
+		return north;
+		break;
+	case east:
+		return west;
+		break;
+	case west:
+		return east;
+		break;
+	}
+}
+
+direction TurnRight(direction input)
+{
+	switch (input)
+	{
+	case north:
+		return east;
+		break;
+	case east:
+		return south;
+		break;
+	case south:
+		return west;
+		break;
+	case west:
+		return north;
+		break;
+	}
+}
+
+direction TurnLeft(direction input)
+{
+	switch (input)
+	{
+	case north:
+		return west;
+		break;
+	case east:
+		return north;
+		break;
+	case south:
+		return east;
+		break;
+	case west:
+		return south;
+		break;
+	}
 }
 
 const int widthArea = 100;
 const int heightArea = 100;
 
-void PrintArea(std::vector <std::vector <char>>* area, Point *robotPosition, direction *robotDirection)
+void PrintArea(std::vector <std::vector <char>>* area, Point* robotPosition, direction* robotDirection)
 {
 	system("cls");
 	for (long y = 0; y < area->size(); ++y)
@@ -156,10 +188,16 @@ void PrintArea(std::vector <std::vector <char>>* area, Point *robotPosition, dir
 				case VISITED:
 					printf("%c", '*');
 					break;
+				case TO_CHECK:
+					printf("%c", '?');
+					break;
 				case WALL:
 					printf("%c", 178);
 					break;
 				case OXYGEN_SYSTEM:
+					printf("%c", 'X');
+					break;
+				case OXYGEN:
 					printf("%c", 'X');
 					break;
 				case EMPTY:
@@ -452,8 +490,9 @@ int main(int argc, char* argv[])
 	input.close();
 
 	direction robotDirection = east;
-	direction robotDirectionPrev;
+	direction moveDirection = east;
 	std::vector <std::vector <char>> area;
+	std::vector <std::vector <direction>> intersections;
 	Point robotPosition{};
 	Point oxygenSystemPosition{};
 
@@ -466,158 +505,253 @@ int main(int argc, char* argv[])
 		}
 		area.push_back(charBuffer);
 	}
+	for (long i = 0; i < heightArea; ++i)
+	{
+		std::vector <direction> directionBuffer;
+		for (long j = 0; j < widthArea; ++j)
+		{
+			directionBuffer.push_back(null);
+		}
+		intersections.push_back(directionBuffer);
+	}
 
 	robotPosition.x = widthArea / 2 + 1;
 	robotPosition.y = heightArea / 2 + 1;
 
-	area[robotPosition.y][robotPosition.x] = VISITED;
+	long toCheck = 0;
 
-	std::random_device dev;
-	std::mt19937 rng(dev());
-	std::uniform_int_distribution<std::mt19937::result_type> dist4(1, 4); // distribution in range [1, 4]
-	std::uniform_int_distribution<std::mt19937::result_type> dist2(0, 1); // distribution in range [0, 1]
-
-	std::vector <Point> intersections;
-	bool scanSurroundings = false;
-
-	while (!computerStop)
+	do
 	{
+		if (area[robotPosition.y][robotPosition.x] == TO_CHECK)
+			--toCheck;
+		area[robotPosition.y][robotPosition.x] = VISITED;
 
-		//unsigned char buffer;
-		//buffer = _getch();
-		//if (buffer == 224)
-		//{
-		//	switch (_getch())
-		//	{
-		//	case 77:
-		//		// code for arrow right
-		//		robotDirection = east;
-		//		break;
-		//	case 75:
-		//		// code for arrow left
-		//		robotDirection = west;
-		//		break;
-		//	case 72:
-		//		// code for arrow up
-		//		robotDirection = north;
-		//		break;
-		//	case 80:
-		//		// code for arrow down
-		//		robotDirection = south;
-		//		break;
-		//	default:
-		//		break;
-		//	}
-		//}
+		int ways = 0;
 
-		inputValue = robotDirection;
-
-		IntCodeComputer();
-
-		if (outputValues[0] == WALL)
+		for (int i = 0; i < 4; ++i)
 		{
-			Point newPosition = MoveRobot(robotPosition, robotDirection);
-			area[newPosition.y][newPosition.x] = WALL;
+			robotDirection = GetDirection(i);
+			Point tempPosition = MoveRobot(robotPosition, robotDirection);
 
-			if (area[robotPosition.y - (long)1][robotPosition.x] == EMPTY)
+			inputValue = robotDirection;
+
+			IntCodeComputer();
+
+			if (outputValues[0] == WALL)
 			{
-				robotDirection = north;
+				Point newPosition = MoveRobot(robotPosition, robotDirection);
+				area[newPosition.y][newPosition.x] = WALL;
+				outputValues.clear();
 			}
-			else if (area[robotPosition.y + (long)1][robotPosition.x] == EMPTY)
+			else if (outputValues[0] == MOVED)
 			{
-				robotDirection = south;
-			}
-			else if (area[robotPosition.y][robotPosition.x + (long)1] == EMPTY)
-			{
-				robotDirection = east;
-			}
-			else if (area[robotPosition.y][robotPosition.x - (long)1] == EMPTY)
-			{
-				robotDirection = west;
-			}
-			else 
-			{
-				robotDirection = (direction)dist4(rng);
-			}
-		}
-		else if (outputValues[0] == MOVED)
-		{
-			if (scanSurroundings)
-			{
-				robotDirection = robotDirectionPrev;
-				scanSurroundings = false;
+				++ways;
+				Point newPosition = MoveRobot(robotPosition, robotDirection);
+				if (area[newPosition.y][newPosition.x] == EMPTY)
+				{
+					area[newPosition.y][newPosition.x] = TO_CHECK;
+					++toCheck;
+				}
+				outputValues.clear();
+
+				inputValue = OppositeDirection(robotDirection);
+				IntCodeComputer();
+				outputValues.clear();
 			}
 			else
 			{
 				Point newPosition = MoveRobot(robotPosition, robotDirection);
+				area[newPosition.y][newPosition.x] = OXYGEN_SYSTEM;
+				oxygenSystemPosition = newPosition;
+				outputValues.clear();
 
-				robotPosition = newPosition;
-				//robotDirection = (direction)dist4(rng);
-
-				if (area[robotPosition.y - 1][robotPosition.x] == EMPTY)
-				{
-					robotDirection = north;
-					robotDirectionPrev = south;
-					scanSurroundings = true;
-				}
-				else if (area[robotPosition.y + 1][robotPosition.x] == EMPTY)
-				{
-					robotDirection = south;
-					robotDirectionPrev = south;
-					scanSurroundings = true;
-				}
-				else if (area[robotPosition.y][robotPosition.x + 1] == EMPTY)
-				{
-					robotDirection = east;
-					robotDirectionPrev = south;
-					scanSurroundings = true;
-				}
-				else if (area[robotPosition.y][robotPosition.x - 1] == EMPTY)
-				{
-					robotDirection = west;
-					robotDirectionPrev = south;
-					scanSurroundings = true;
-				}
-				else
-				{
-					if (area[robotPosition.y - 1][robotPosition.x] == VISITED && robotDirection != south && dist2(rng))
-					{
-						robotDirection = north;
-					}
-					else if (area[robotPosition.y + 1][robotPosition.x] == VISITED && robotDirection != north && dist2(rng))
-					{
-						robotDirection = south;
-					}
-					else if (area[robotPosition.y][robotPosition.x + 1] == VISITED && robotDirection != west && dist2(rng))
-					{
-						robotDirection = east;
-					}
-					else if (area[robotPosition.y][robotPosition.x - 1] == VISITED && robotDirection != east && dist2(rng))
-					{
-						robotDirection = west;
-					}
-				}
-
-				area[robotPosition.y][robotPosition.x] = VISITED;
+				inputValue = OppositeDirection(robotDirection);
+				IntCodeComputer();
+				outputValues.clear();
 			}
+		}
+
+		if (ways > 2)
+		{
+			if (intersections[robotPosition.y][robotPosition.x] == null)
+				intersections[robotPosition.y][robotPosition.x] = moveDirection;
+			if (area[robotPosition.y - 1][robotPosition.x] == TO_CHECK)
+			{
+				robotDirection = north;
+			}
+			else if (area[robotPosition.y + 1][robotPosition.x] == TO_CHECK)
+			{
+				robotDirection = south;
+			}
+			else if (area[robotPosition.y][robotPosition.x - 1] == TO_CHECK)
+			{
+				robotDirection = west;
+			}
+			else if (area[robotPosition.y][robotPosition.x + 1] == TO_CHECK)
+			{
+				robotDirection = east;
+			}
+			else
+			{
+				robotDirection = OppositeDirection(intersections[robotPosition.y][robotPosition.x]);
+			}
+			moveDirection = robotDirection;
 		}
 		else
 		{
-			Point newPosition = MoveRobot(robotPosition, robotDirection);
-			area[newPosition.y][newPosition.x] = OXYGEN_SYSTEM;
-			oxygenSystemPosition = newPosition;
-
-			computerStop = true;
+			robotDirection = moveDirection;
+			Point tempPosition = MoveRobot(robotPosition, robotDirection);
+			if (area[tempPosition.y][tempPosition.x] == WALL)
+			{
+				Point tempLeftPosition = MoveRobot(robotPosition, TurnLeft(robotDirection));
+				Point tempRightPosition = MoveRobot(robotPosition, TurnRight(robotDirection));
+				if (area[tempLeftPosition.y][tempLeftPosition.x] != WALL)
+				{
+					robotDirection = TurnLeft(robotDirection);
+					moveDirection = robotDirection;
+				}
+				else if (area[tempRightPosition.y][tempRightPosition.x] != WALL)
+				{
+					robotDirection = TurnRight(robotDirection);
+					moveDirection = robotDirection;
+				}
+				else
+				{
+					robotDirection = OppositeDirection(moveDirection);
+					moveDirection = robotDirection;
+				}
+			}
+			else
+			{
+				robotDirection = moveDirection;
+			}
 		}
 
+		inputValue = robotDirection;
+		IntCodeComputer();
 		outputValues.clear();
+
+		robotPosition = MoveRobot(robotPosition, robotDirection);
+
+	} while (toCheck > 0);
+
+	PrintArea(&area, &robotPosition, &robotDirection);
+
+	std::vector <OxygenPath> oxygenPaths;
+	std::vector <OxygenPath> oxygenPathsToAdd;
+
+	OxygenPath system;
+	system.pathDirection = north;
+	system.position = oxygenSystemPosition;
+	oxygenPaths.push_back(system);
+
+	long numberOfMinutes = 0;
+	direction pathDirection;
+
+	do
+	{
+		for (auto j = oxygenPaths.begin(); j != oxygenPaths.end();)
+		{
+			j->position = MoveRobot(j->position, j->pathDirection);
+			area[j->position.y][j->position.x] = OXYGEN;
+
+			int ways = 0;
+
+			if (area[j->position.y - 1][j->position.x] != WALL)
+			{
+				++ways;
+			}
+			if (area[j->position.y + 1][j->position.x] != WALL)
+			{
+				++ways;
+			}
+			if (area[j->position.y][j->position.x - 1] != WALL)
+			{
+				++ways;
+			}
+			if (area[j->position.y][j->position.x + 1] != WALL)
+			{
+				++ways;
+			}
+
+			if (ways > 2)
+			{
+				if (area[j->position.y - 1][j->position.x] != WALL && j->pathDirection != south)
+				{
+					OxygenPath temp;
+					temp.position = j->position;
+					temp.pathDirection = north;
+					oxygenPathsToAdd.push_back(temp);
+				}
+				if (area[j->position.y + 1][j->position.x] != WALL && j->pathDirection != north)
+				{
+					OxygenPath temp;
+					temp.position = j->position;
+					temp.pathDirection = south;
+					oxygenPathsToAdd.push_back(temp);
+				}
+				if (area[j->position.y][j->position.x - 1] != WALL && j->pathDirection != east)
+				{
+					OxygenPath temp;
+					temp.position = j->position;
+					temp.pathDirection = west;
+					oxygenPathsToAdd.push_back(temp);
+				}
+				if (area[j->position.y][j->position.x + 1] != WALL && j->pathDirection != west)
+				{
+					OxygenPath temp;
+					temp.position = j->position;
+					temp.pathDirection = east;
+					oxygenPathsToAdd.push_back(temp);
+				}
+				
+				j = oxygenPaths.erase(j);
+			}
+			else
+			{
+				Point tempPosition = MoveRobot(j->position, j->pathDirection);
+				if (area[tempPosition.y][tempPosition.x] == WALL)
+				{
+					Point tempLeftPosition = MoveRobot(j->position, TurnLeft(j->pathDirection));
+					Point tempRightPosition = MoveRobot(j->position, TurnRight(j->pathDirection));
+					if (area[tempLeftPosition.y][tempLeftPosition.x] != WALL)
+					{
+						j->pathDirection = TurnLeft(j->pathDirection);
+						++j;
+					}
+					else if (area[tempRightPosition.y][tempRightPosition.x] != WALL)
+					{
+						j->pathDirection = TurnRight(j->pathDirection);
+						++j;
+					}
+					else
+					{
+						j = oxygenPaths.erase(j);
+					}
+				}
+				else 
+				{
+					++j;
+				}
+			}
+		}
+
+		for (size_t i = 0; i < oxygenPathsToAdd.size(); ++i)
+		{
+			oxygenPaths.push_back(oxygenPathsToAdd[i]);
+		}
+		oxygenPathsToAdd.clear();
+
+		if (oxygenPaths.size() >= 0)
+			++numberOfMinutes;
 
 		PrintArea(&area, &robotPosition, &robotDirection);
 
-		if (computerStop)
-			break;
-	}
+	} while (oxygenPaths.size() > 0);
+
+	//PrintArea(&area, &robotPosition, &robotDirection);
 
 	std::cout << "Start position: " << widthArea / 2 + 1 << ":" << heightArea / 2 + 1 << std::endl;
 	std::cout << "Oxygen system position: " << oxygenSystemPosition.x << ":" << oxygenSystemPosition.y << std::endl;
+	std::cout << "Number of minutes: " << numberOfMinutes << std::endl;
 }

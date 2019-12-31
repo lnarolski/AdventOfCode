@@ -1,0 +1,95 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                               ▓▓▓▓▓▓▓ ▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓ ▓▓▓▓▓ ▓▓▓
+                              ▓XXXXXXX▓XXXXX▓XXXXXXXXX▓XXXXX▓XXXXX▓XXX▓
+                               ▓▓X▓▓▓▓▓X▓▓▓X▓X▓▓▓▓▓▓▓X▓X▓X▓X▓▓▓X▓X▓X▓▓
+                              ▓XXX▓XXXXX▓X▓XXX▓XXXXX▓X▓X▓X▓XXX▓X▓X▓XXX▓
+                              ▓X▓▓▓X▓▓▓▓▓X▓▓▓▓▓X▓X▓▓▓X▓X▓X▓▓▓X▓X▓X▓▓▓X▓
+                              ▓XXX▓X▓XXXXXXX▓XXX▓X▓XXX▓X▓XXX▓X▓X▓XXX▓X▓
+                               ▓▓X▓X▓▓▓▓▓X▓X▓X▓X▓X▓X▓▓▓X▓▓▓X▓X▓X▓▓▓X▓X▓
+                              ▓XXX▓XXXXXXX▓X▓X▓X▓X▓XXXXX▓XXX▓XXX▓XXXXX▓
+                              ▓X▓X▓▓▓▓▓▓▓▓▓X▓▓▓X▓▓▓▓▓▓▓▓▓X▓X▓▓▓▓▓▓▓▓▓▓
+                              ▓X▓XXXXX▓XXXXX▓XXX▓XXXXXXXXX▓X▓XXXXXXXXX▓
+                              ▓X▓▓▓▓▓X▓X▓▓▓▓▓X▓X▓X▓▓▓▓▓▓▓X▓▓▓X▓▓▓▓▓▓▓X▓
+                              ▓XXX▓XXX▓XXX▓XXX▓X▓X▓XXX▓XXX▓XXX▓XXXXX▓X▓
+                              ▓X▓X▓▓▓▓▓▓▓X▓▓▓X▓X▓X▓X▓X▓X▓▓▓X▓▓▓X▓▓▓X▓X▓
+                              ▓X▓XXXXXXX▓XXXXX▓X▓X▓X▓XXXXX▓X▓XXX▓XXX▓X▓
+                               ▓▓▓▓▓▓X▓▓▓▓▓▓▓▓▓X▓X▓▓▓▓▓▓▓▓▓X▓▓▓X▓X▓▓▓X▓
+                              ▓XXXXX▓XXXXXXXXXXX▓XXXXX▓XXXXXXXXX▓X▓X▓X▓
+                              ▓X▓▓▓X▓X▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓X▓X▓▓▓▓▓▓▓▓▓X▓X▓X▓
+                              ▓XXX▓X▓XXXXXXXXX▓XXXXX▓XXX▓XXXXX▓XXXXX▓X▓
+                               ▓▓X▓X▓▓▓▓▓▓▓▓▓▓▓X▓▓▓X▓▓▓▓▓X▓▓▓X▓▓▓▓▓▓▓X▓
+                              ▓X▓X▓X▓XXXXXXX▓XXX▓XXXXXXX▓X▓X▓XXXXXXX▓X▓
+                              ▓X▓X▓X▓X▓▓▓▓▓X▓X▓▓▓▓▓▓▓▓▓X▓X▓X▓X▓▓▓▓▓X▓X▓
+                              ▓X▓X▓X▓XXX▓XXXXX▓XXXXO▓X▓X▓X▓XXX▓XXX▓XXX▓
+                              ▓X▓X▓X▓▓▓X▓▓▓X▓▓▓X▓▓▓▓▓X▓X▓X▓▓▓▓▓X▓X▓▓▓▓
+                              ▓X▓X▓XXX▓XXX▓X▓XXX▓XXX▓XXX▓XXX▓XXX▓XXXXX▓
+                              ▓X▓X▓▓▓X▓▓▓X▓▓▓X▓▓▓X▓▓▓X▓▓▓X▓X▓X▓▓ ▓▓▓▓X▓
+                              ▓X▓XXX▓XXXXX▓XXX▓XXXXXXX▓XXX▓XXX▓X▓XXXXX▓
+                              ▓X▓▓▓X▓▓▓▓▓▓▓X▓▓▓X▓▓▓▓▓▓▓▓▓▓▓X▓▓▓X▓X▓▓▓X▓
+                              ▓XXX▓XXXXX▓XXX▓X▓X▓XXXXXXXXX▓X▓XXX▓XXX▓X▓
+                               ▓▓X▓▓▓▓▓X▓X▓▓▓X▓X▓X▓X▓▓▓▓▓X▓X▓X▓▓▓▓▓X▓X▓
+                              ▓XXXXXXX▓XXX▓XXX▓X▓X▓XXX▓XXX▓XXX▓XXXXX▓X▓
+                              ▓X▓▓▓▓▓X▓▓▓▓▓X▓X▓X▓▓▓▓▓X▓X▓▓▓▓▓X▓X▓▓▓▓▓X▓
+                              ▓X▓XXXXX▓XXXXX▓X▓XXXXXXX▓X▓XXX▓X▓X▓XXX▓X▓
+                              ▓X▓▓▓▓▓X▓X▓▓▓▓▓X▓▓▓▓▓▓▓▓▓X▓X▓X▓X▓X▓▓▓X▓X▓
+                              ▓X▓XXX▓X▓X▓XXX▓XXXXX▓XXX▓XXX▓X▓X▓XXX▓XXX▓
+                              ▓X▓X▓X▓▓▓X▓X▓▓▓▓▓X▓X▓X▓X▓▓▓▓▓X▓▓▓▓▓X▓▓▓X▓
+                              ▓XXX▓XXX▓X▓X▓XXXXX▓XXX▓XXXXX▓XXXXX▓XXX▓X▓
+                              ▓X▓▓ ▓▓X▓X▓X▓X▓▓▓▓ ▓▓X▓▓▓▓▓X▓▓▓▓▓X▓^▓X▓▓
+                              ▓XXX▓X▓X▓XXX▓X▓XXX▓XXX▓XXX▓X▓XXXXX▓X▓XXX▓
+                               ▓▓X▓X▓X▓▓▓X▓X▓X▓X▓▓▓▓▓X▓X▓▓▓X▓▓▓▓▓▓▓▓▓X▓
+                              ▓XXXXX▓XXXXX▓XXX▓XXXXXXX▓XXXXXXXXXXXXXXX▓
+                               ▓▓▓▓▓ ▓▓▓▓▓ ▓▓▓ ▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Start position: 51:51
+Oxygen system position: 37:63
+Number of minutes: 372
