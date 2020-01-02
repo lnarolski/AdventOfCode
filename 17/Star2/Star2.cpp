@@ -32,9 +32,42 @@ long j = 0;
 long relativeBase = 0;
 
 std::vector <long long> commands;
-long long inputValue = 0;
+char* inputValue;
+size_t inputIndex;
 std::vector <long long> outputValues;
 bool computerStop = false;
+
+void PrintOutputValues(std::vector <long long> outputValues)
+{
+	std::vector <std::vector <char>> area;
+	std::vector <char> bufferVector;
+
+	system("cls");
+	for (size_t i = 0; i < outputValues.size(); ++i)
+	{
+		if (outputValues[i] == 10)
+		{
+			if (bufferVector.size() != 0)
+			{
+				area.push_back(bufferVector);
+				bufferVector.clear();
+			}
+		}
+		else
+		{
+			bufferVector.push_back(outputValues[i]);
+		}
+	}
+
+	for (size_t y = 0; y < area.size(); ++y)
+	{
+		for (size_t x = 0; x < area[y].size(); ++x)
+		{
+			printf("%c", area[y][x]);
+		}
+		printf("\n");
+	}
+}
 
 void IntCodeComputer()
 {
@@ -115,16 +148,14 @@ void IntCodeComputer()
 			}
 			break;
 		case INPUT_COMM:
-			(firstParameterMode == 1 ? commands[j + 1] : firstParameterMode == 0 ? commands[commands[j + 1]] : commands[relativeBase + commands[j + 1]]) = inputValue;
+			(firstParameterMode == 1 ? commands[j + 1] : firstParameterMode == 0 ? commands[commands[j + 1]] : commands[relativeBase + commands[j + 1]]) = inputValue[inputIndex];
+			++inputIndex;
 			if (!(j == commands[j + 3]))
 				j = j + 2;
 			break;
 		case OUTPUT_COMM:
 			outputValues.push_back((firstParameterMode == 1 ? commands[j + 1] : firstParameterMode == 0 ? commands[commands[j + 1]] : commands[relativeBase + commands[j + 1]]));
-			//cout << "Output: " << outputValue << endl;
 			j = j + 2;
-			//if (outputValues.size() == 1)
-			//	return;
 			break;
 		case JUMP_IF_TRUE:
 			if ((firstParameterMode == 1 ? commands[j + 1] : firstParameterMode == 0 ? commands[commands[j + 1]] : commands[relativeBase + commands[j + 1]]) != 0)
@@ -298,28 +329,20 @@ int main(int argc, char* argv[])
 
 	commands[0] = 2;
 
-	char routine[] = "L,6,R,12,L,6,L,8,L,8,L,6,R,12,L,6,L,8,L,8,L,6,R,12,R,8,L,8,L,4,L,4,L,6,L,6,R,12,R,8,L,8,L,6,R,12,L,8,L,8,L,8,L,4,L,4,L,6,L,6,R,12,R,8,L,8,L,4,L,4,L,6,L,6,R,12,L,6,L,8,L,8";
+	char mainRoutine[] = "A,A,B,C,B,A,C,B,C,A\nL,6,R,12,L,6,L,8,L,8\nL,6,R,12,R,8,L,8\nL,4,L,4,L,6\nn\n";
+
+	char funcA[] = "L,6,R,12,L,6,L,8,L,8\n";
+	char funcB[] = "L,6,R,12,R,8,L,8\n";
+	char funcC[] = "L,4,L,4,L,6\n";
 
 	while (!computerStop)
 	{
+		inputIndex = 0;
+		inputValue = mainRoutine;
 		IntCodeComputer();
+
+		PrintOutputValues(outputValues);
 	}
 
-
-	for (size_t y = 0; y < area.size(); ++y)
-	{
-		for (size_t x = 0; x < area[y].size(); ++x)
-		{
-			/*if (area[y][x] == '#' && area[y - 1][x] == '#' && area[y + 1][x] == '#' && area[y][x - 1] == '#' && area[y][x + 1] == '#')
-			{
-				alignment += x * y;
-				printf("O");
-			}
-			else*/
-				printf("%c", area[y][x]);
-		}
-		printf("\n");
-	}
-
-	std::cout << "Collected dust: " << outputValues[0] << std::endl;
+	std::cout << "Collected dust: " << outputValues[outputValues.size() - 1] << std::endl;
 }
