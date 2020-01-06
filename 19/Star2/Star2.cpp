@@ -298,8 +298,9 @@ int main(int argc, char* argv[])
 	std::vector <std::vector <unsigned char>> area;
 	std::vector <unsigned char> bufferVector;
 
-	unsigned long long width = 1000;
-	unsigned long long height = 1000;
+	unsigned long long width = 2000;
+	unsigned long long height = 2000;
+	unsigned long long squareWith = 100;
 
 	printf("Creating area...\n");
 	for (int y = 0; y < height; ++y)
@@ -312,54 +313,109 @@ int main(int argc, char* argv[])
 		bufferVector.clear();
 	}
 
-	unsigned long long xStart = 4;
-	for (unsigned long long y = 3; y < height; ++y)
+	unsigned long long l1_x = 18;
+	unsigned long long l2_x = 20;
+
+	unsigned int l1_i = 0;
+	unsigned int l2_i = 0;
+	unsigned int l1_ii = 0;
+	unsigned int l2_ii = 0;
+
+	unsigned long long xStart = 0;
+	unsigned long long yStart = 0;
+
+	bool firstFound = false;
+	bool startSecondModifl1 = false;
+	bool startSecondModifl2 = false;
+
+	for (unsigned long long y = 15; y < height; ++y)
 	{
-		printf("Working with IntCodeComputer: %d%%\n", (int) ((double) y/(double) height * 100.0));
-		bool finished = false;
-		bool started = false;
-		for (unsigned long long x = xStart; x < width && !finished; ++x)
+		printf("Create beam: %d%%\n", (int) ((double) y/(double) height * 100.0));
+
+		if (l2_x >= width)
 		{
-			inputValue.clear();
-			inputIndex = 0;
-
-			inputValue.push_back(x);
-			inputValue.push_back(y);
-
-			while (!computerStop)
-			{
-				IntCodeComputer(commands);
-			}
-			computerStop = false;
-
-			if (outputValues[0] == 1)
-			{
-				if (!started)
-					xStart = x;
-				area[y][x] = '#';
-				started = true;
-			}
-			else if (started)
-				finished = true;
-
-			outputValues.clear();
+			l2_x = width - 1;
 		}
-	}
 
-	printf("Generating visualisation of area...\n");
-	for (int y = 0; y < area.size(); ++y)
-	{
-		for (int x = 0; x < area[y].size(); ++x)
+		if (l2_x - l1_x + 1 == squareWith && !firstFound)
 		{
-			printf("%c", area[y][x]);
+			xStart = l1_x;
+			yStart = y;
+
+			firstFound = true;
 		}
-		printf("\n");
+
+		//if (l1_x <= l2_x)
+		//{
+		//	area[y][l1_x] = '#';
+		//	area[y][l2_x] = '#';
+		//}
+
+		for (unsigned long long x = l1_x; x <= l2_x; ++x)
+		{
+			area[y][x] = '#';
+		}
+
+		++l1_x;
+		++l2_x;
+
+		++l1_i;
+		++l2_i;
+
+		if (y == 42)
+		{
+			startSecondModifl1 = true;
+
+			--l1_i;
+			l1_ii = 0;
+		}
+
+		if (startSecondModifl1)
+		{
+			++l1_ii;
+
+			if (l1_ii == 36)
+			{
+				--l1_i;
+				l1_ii = 0;
+			}
+		}
+
+		if (l1_i == 7)
+		{
+			++l1_x;
+			l1_i = 0;
+		}
+
+		if (l2_i == 3)
+		{
+			++l2_x;
+			l2_i = 0;
+		}
+
+		if (startSecondModifl2)
+		{
+			++l2_ii;
+
+			if (l2_ii == 41)
+			{
+				++l2_x;
+				l2_i = 0;
+				l2_ii = 0;
+			}
+		}
+
+		if (y == 43)
+		{
+			startSecondModifl2 = true;
+			++l2_x;
+			l2_i = 0;
+		}
 	}
 
 	bool stopSearching = false;
-	xStart = 4;
-	unsigned long long coordinatesFound[2];
-	for (unsigned long long y = 3; y < height && !stopSearching; ++y)
+	unsigned long long coordinatesFound[2] = {0};
+	for (unsigned long long y = yStart; y < height && !stopSearching; ++y)
 	{
 		printf("Searching for square: %d%%\n", (int)((double)y / (double)height * 100.0));
 		bool finished = false;
@@ -368,8 +424,7 @@ int main(int argc, char* argv[])
 		{
 			bool squareFound = true;
 
-
-			for (unsigned long long i = 0; i < 100 && squareFound; ++i)
+			for (unsigned long long i = 0; i < squareWith && squareFound; ++i)
 			{
 				if (x + i >= width || y + i >= height)
 				{
@@ -407,17 +462,17 @@ int main(int argc, char* argv[])
 		}
 	}
 
-	area[coordinatesFound[1]][coordinatesFound[0]] = 'O';
+	//area[coordinatesFound[1]][coordinatesFound[0]] = 'O';
 
-	printf("Generating visualisation of area...\n");
-	for (int y = 0; y < area.size(); ++y)
-	{
-		for (int x = 0; x < area[y].size(); ++x)
-		{
-			printf("%c", area[y][x]);
-		}
-		printf("\n");
-	}
+	//printf("Generating visualisation of area...\n");
+	//for (int y = 0; y < area.size(); ++y)
+	//{
+	//	for (int x = 0; x < area[y].size(); ++x)
+	//	{
+	//		printf("%c", area[y][x]);
+	//	}
+	//	printf("\n");
+	//}
 
 	std::cout << "Value: " << coordinatesFound[0] * 10000 + coordinatesFound[1] << std::endl;
 }

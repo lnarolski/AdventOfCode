@@ -295,10 +295,28 @@ int main(int argc, char* argv[])
 
 	input.close();
 
-	unsigned long pointsAffected = 0;
-	for (unsigned int y = 0; y < 50; ++y)
+	unsigned long long width = 200;
+	unsigned long long height = 200;
+
+	std::vector <std::vector <unsigned char>> area;
+	std::vector <unsigned char> bufferVector;
+
+	printf("Creating area...\n");
+	for (int y = 0; y < height; ++y)
 	{
-		for (unsigned int x = 0; x < 50; ++x)
+		for (int x = 0; x < width; ++x)
+		{
+			bufferVector.push_back('.');
+		}
+		area.push_back(bufferVector);
+		bufferVector.clear();
+	}
+
+	unsigned long pointsAffected = 0;
+	for (unsigned int y = 0; y < height; ++y)
+	{
+		printf("Working with IntCodeComputer: %d%%\n", (int)((double)y / (double)height * 100.0));
+		for (unsigned int x = 0; x < width; ++x)
 		{
 			inputValue.clear();
 			inputIndex = 0;
@@ -314,18 +332,58 @@ int main(int argc, char* argv[])
 
 			if (outputValues[0] == 1)
 			{
-				printf("#");
+				//printf("#");
 				++pointsAffected;
+
+				area[y][x] = '#';
 			}
 			else
 			{
-				printf(".");
+				//printf(".");
 			}
 
 			outputValues.clear();
 		}
-		printf("\n");
+		//printf("\n");
 	}
 
 	std::cout << "Points affected: " << pointsAffected << std::endl;
+
+	std::fstream output;
+	std::string outputFileLine;
+	output.open("output.txt", std::fstream::out);
+
+	long outputLine[5] = {-1};
+
+	for (unsigned int y = 0; y < height; ++y)
+	{
+		bool started = false;
+		bool finished = false;
+
+		unsigned int i = 0;
+		for (unsigned int x = 1; x < width - 1 && !finished; ++x)
+		{
+			if (area[y][x] == '#')
+			{
+				if (!started && area[y][x - 1] == '.')
+				{
+					started = true;
+					outputLine[0] = x;
+					outputLine[1] = y;
+				}
+
+				++i;
+			}
+			else if (area[y][x - 1] == '#' && started)
+			{
+				finished = true;
+				outputLine[2] = x - 1;
+				outputLine[3] = y;
+
+				outputLine[4] = i;
+
+				output << outputLine[0] << ',' << outputLine[1] << ',' << outputLine[2] << ',' << outputLine[3] << ',' << outputLine[4] << std::endl;
+			}
+		}
+	}
 }
