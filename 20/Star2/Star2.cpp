@@ -6,7 +6,7 @@
 #define CHECKED '!'
 #define PORTAL 'X'
 
-#define BIAS 1000
+#define MAX_LEVEL 100
 
 #include <iostream>
 #include <ctype.h>
@@ -49,6 +49,7 @@ struct Path
 	direction pathDirection;
 	Point position;
 	unsigned long long steps;
+	int level;
 };
 
 void PrintArea(std::vector <std::vector <char>> *area)
@@ -64,28 +65,45 @@ void PrintArea(std::vector <std::vector <char>> *area)
 	}
 }
 
-Point Teleportation(Point position, std::map <std::string, Portal> *portals)
+Portal Teleportation(Point position, std::map <std::string, Portal> *portals)
 {
+	Portal temp;
 	for (auto i = portals->begin(); i != portals->end(); ++i)
 	{
 		if (*&i->second.start.x == position.x && *&i->second.start.y == position.y)
 		{
-			position.x = *&i->second.end.x;
-			position.y = *&i->second.end.y;
+			temp.start.x = *&i->second.end.x;
+			temp.start.y = *&i->second.end.y;
 
-			return position;
+			temp.end.x = *&i->second.start.x;
+			temp.end.y = *&i->second.start.y;
+
+			return temp;
 		}
 		else if (*&i->second.end.x == position.x && *&i->second.end.y == position.y)
 		{
-			position.x = *&i->second.start.x;
-			position.y = *&i->second.start.y;
+			temp.start.x = *&i->second.start.x;
+			temp.start.y = *&i->second.start.y;
 
-			return position;
+			temp.end.x = *&i->second.end.x;
+			temp.end.y = *&i->second.end.y;
+
+			return temp;
 		}
 	}
 
-	Point temp;
 	return temp;
+}
+
+bool IsInnerTeleport(Point *a, Point *b, Point *center)
+{
+	double distanceA = sqrt(pow((double) a->x - center->x, 2) + pow((double) a->y - center->y, 2));
+	double distanceB = sqrt(pow((double) b->x - center->x, 2) + pow((double) b->y - center->y, 2));
+
+	if (distanceA > distanceB) //WTF xD ???????????????????????????
+		return true;
+	else
+		return false;
 }
 
 Point MoveRobot(Point robotPosition, direction robotDirection)
@@ -393,6 +411,12 @@ int main(int argc, char* argv[])
 
 	//PrintArea(&area);
 
+	std::vector <std::vector <std::vector <char>>> areas;
+	areas.push_back(area);
+	Point center;
+	center.x = area[0].size() / 2;
+	center.y = area.size() / 2;
+
 	std::vector <Path> Paths;
 	std::vector <Path> PathsToAdd;
 
@@ -402,28 +426,51 @@ int main(int argc, char* argv[])
 	system.pathDirection = south;
 	system.position = start;
 	system.steps = 0;
+	system.level = 0;
 	Paths.push_back(system);
 
 	do
 	{
-		//PrintArea(&area);
+		//for (size_t i = 0; i < areas.size(); ++i)
+		//{
+		//	PrintArea(&areas[i]);
+		//}
 
 		for (auto j = Paths.begin(); j != Paths.end();)
 		{
+			//PrintArea(&areas[0]);
+
+			if (j->level > MAX_LEVEL)
+			{
+				j = Paths.erase(j);
+				continue;
+			}
+
+			if (j->level == 0)
+			{
+				areas[j->level][start.y][start.x] = PATH;
+				areas[j->level][end.y][end.x] = PATH;
+			}
+			else
+			{
+				areas[j->level][start.y][start.x] = WALL;
+				areas[j->level][end.y][end.x] = WALL;
+			}
+
 			Point testPosition = MoveRobot(j->position, j->pathDirection);
-			if (area[testPosition.y][testPosition.x] == WALL)
+			if (areas[j->level][testPosition.y][testPosition.x] == WALL)
 			{
 				do
 				{
 					j->pathDirection = TurnLeft(j->pathDirection);
 					testPosition = MoveRobot(j->position, j->pathDirection);
-				} while (area[testPosition.y][testPosition.x] == WALL);
+				} while (areas[j->level][testPosition.y][testPosition.x] == WALL);
 			}
 			j->position = testPosition;
 			++(j->steps);
 
 			if (j->position == start)
-				area[j->position.y][j->position.x] = VISITED;
+				areas[j->level][j->position.y][j->position.x] = VISITED;
 			else if (j->position == end)
 			{
 				if (j->steps < minNumOfSteps)
@@ -431,65 +478,85 @@ int main(int argc, char* argv[])
 				j = Paths.erase(j);
 				continue;
 			}
-			if (area[j->position.y][j->position.x] == PORTAL)
+			if (areas[j->level][j->position.y][j->position.x] == PORTAL)
 			{
-				j->position = Teleportation(j->position, &portals);
+				Portal temp = Teleportation(j->position, &portals);
+				j->position = temp.start;
+				if (IsInnerTeleport(&temp.start, &temp.end, &center))
+				{
+					++(j->level);
+					if (areas.size() - 1 < j->level)
+						areas.push_back(area);
+				}
+				else
+				{
+					--(j->level);
+					if (j->level < 0)
+					{
+						j = Paths.erase(j);
+						continue;
+					}
+				}
 				++j->steps;
 			}
 
-			area[j->position.y][j->position.x] = VISITED;
+			areas[j->level][j->position.y][j->position.x] = VISITED;
 
 			int ways = 0;
 
-			if (area[j->position.y - 1][j->position.x] != WALL && area[j->position.y - 1][j->position.x] != VISITED)
+			if (areas[j->level][j->position.y - 1][j->position.x] != WALL && areas[j->level][j->position.y - 1][j->position.x] != VISITED)
 			{
 				++ways;
 			}
-			if (area[j->position.y + 1][j->position.x] != WALL && area[j->position.y + 1][j->position.x] != VISITED)
+			if (areas[j->level][j->position.y + 1][j->position.x] != WALL && areas[j->level][j->position.y + 1][j->position.x] != VISITED)
 			{
 				++ways;
 			}
-			if (area[j->position.y][j->position.x - 1] != WALL && area[j->position.y][j->position.x - 1] != VISITED)
+			if (areas[j->level][j->position.y][j->position.x - 1] != WALL && areas[j->level][j->position.y][j->position.x - 1] != VISITED)
 			{
 				++ways;
 			}
-			if (area[j->position.y][j->position.x + 1] != WALL && area[j->position.y][j->position.x + 1] != VISITED)
+			if (areas[j->level][j->position.y][j->position.x + 1] != WALL && areas[j->level][j->position.y][j->position.x + 1] != VISITED)
 			{
 				++ways;
 			}
 
 			if (ways > 1)
 			{
-				if (area[j->position.y - 1][j->position.x] != WALL && area[j->position.y - 1][j->position.x] != VISITED && j->pathDirection != south)
+				if (areas[j->level][j->position.y - 1][j->position.x] != WALL && areas[j->level][j->position.y - 1][j->position.x] != VISITED && j->pathDirection != south)
 				{
 					Path temp;
 					temp.position = j->position;
 					temp.pathDirection = north;
 					temp.steps = j->steps;
+					temp.level = j->level;
 					PathsToAdd.push_back(temp);
 				}
-				if (area[j->position.y + 1][j->position.x] != WALL && area[j->position.y + 1][j->position.x] != VISITED && j->pathDirection != north)
+				if (areas[j->level][j->position.y + 1][j->position.x] != WALL && areas[j->level][j->position.y + 1][j->position.x] != VISITED && j->pathDirection != north)
 				{
 					Path temp;
 					temp.position = j->position;
 					temp.pathDirection = south;
 					temp.steps = j->steps;
+					temp.level = j->level;
 					PathsToAdd.push_back(temp);
 				}
-				if (area[j->position.y][j->position.x - 1] != WALL && area[j->position.y][j->position.x - 1] != VISITED && j->pathDirection != east)
+				if (areas[j->level][j->position.y][j->position.x - 1] != WALL && areas[j->level][j->position.y][j->position.x - 1] != VISITED && j->pathDirection != east)
 				{
 					Path temp;
 					temp.position = j->position;
 					temp.pathDirection = west;
 					temp.steps = j->steps;
+					temp.level = j->level;
 					PathsToAdd.push_back(temp);
 				}
-				if (area[j->position.y][j->position.x + 1] != WALL && area[j->position.y][j->position.x + 1] != VISITED && j->pathDirection != west)
+				if (areas[j->level][j->position.y][j->position.x + 1] != WALL && areas[j->level][j->position.y][j->position.x + 1] != VISITED && j->pathDirection != west)
 				{
 					Path temp;
 					temp.position = j->position;
 					temp.pathDirection = east;
 					temp.steps = j->steps;
+					temp.level = j->level;
 					PathsToAdd.push_back(temp);
 				}
 
@@ -498,22 +565,22 @@ int main(int argc, char* argv[])
 			else
 			{
 				Point tempPosition = MoveRobot(j->position, j->pathDirection);
-				if (area[tempPosition.y][tempPosition.x] == WALL && area[tempPosition.y][tempPosition.x] != VISITED)
+				if (areas[j->level][tempPosition.y][tempPosition.x] == WALL && areas[j->level][tempPosition.y][tempPosition.x] != VISITED)
 				{
 					Point tempLeftPosition = MoveRobot(j->position, TurnLeft(j->pathDirection));
 					Point tempRightPosition = MoveRobot(j->position, TurnRight(j->pathDirection));
 					Point tempOppositePosition = MoveRobot(j->position, OppositeDirection(j->pathDirection));
-					if (area[tempLeftPosition.y][tempLeftPosition.x] != WALL && area[tempLeftPosition.y][tempLeftPosition.x] != VISITED)
+					if (areas[j->level][tempLeftPosition.y][tempLeftPosition.x] != WALL && areas[j->level][tempLeftPosition.y][tempLeftPosition.x] != VISITED)
 					{
 						j->pathDirection = TurnLeft(j->pathDirection);
 						++j;
 					}
-					else if (area[tempRightPosition.y][tempRightPosition.x] != WALL && area[tempRightPosition.y][tempRightPosition.x] != VISITED)
+					else if (areas[j->level][tempRightPosition.y][tempRightPosition.x] != WALL && areas[j->level][tempRightPosition.y][tempRightPosition.x] != VISITED)
 					{
 						j->pathDirection = TurnRight(j->pathDirection);
 						++j;
 					}
-					else if (area[tempOppositePosition.y][tempOppositePosition.x] != WALL && area[tempOppositePosition.y][tempOppositePosition.x] != VISITED)
+					else if (areas[j->level][tempOppositePosition.y][tempOppositePosition.x] != WALL && areas[j->level][tempOppositePosition.y][tempOppositePosition.x] != VISITED)
 					{
 						j->pathDirection = OppositeDirection(j->pathDirection);
 						++j;
@@ -536,11 +603,11 @@ int main(int argc, char* argv[])
 		}
 		PathsToAdd.clear();
 
-		//PrintArea(&area, &robotPosition, &robotDirection);
+		//Printareas[j->level](&areas[j->level], &robotPosition, &robotDirection);
 
 	} while (Paths.size() > 0);
 
-	PrintArea(&area);
+	PrintArea(&areas[0]);
 
 	std::cout << "Steps: " << minNumOfSteps << std::endl;
 }
