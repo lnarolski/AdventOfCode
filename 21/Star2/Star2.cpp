@@ -316,7 +316,11 @@ int main(int argc, char* argv[])
 
 	input.close();
 
-	char springscript[] = "NOT C J\nAND D J\nNOT J J\nNOT B T\nAND D T\nNOT T T\nAND J T\nNOT T J\nNOT A T\nOR T J\nWALK\n\0";
+	char springscript[] = 
+		"NOT C J\nAND D J\nNOT J J\n"
+		"NOT H T\nOR T J\n"
+		"NOT B T\nAND D T\nNOT T T\nAND J T\nNOT T J\n"
+		"NOT A T\nOR T J\nRUN\n\0";
 
 	while (!computerStop)
 	{
