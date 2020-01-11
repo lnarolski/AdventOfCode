@@ -1,5 +1,7 @@
 ﻿  Star2.cpp
-D:\Advent of Code\22\Star2\Star2.cpp(57,32): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
-D:\Advent of Code\22\Star2\Star2.cpp(74,24): warning C4018: '<': signed/unsigned mismatch
-D:\Advent of Code\22\Star2\Star2.cpp(49): warning C4715: 'ExtractLong': not all control paths return a value
+D:\Advent of Code\22\Star2\Star2.cpp(74,10): warning C4018: '>=': signed/unsigned mismatch
+D:\Advent of Code\22\Star2\Star2.cpp(83,35): warning C4018: '<': signed/unsigned mismatch
+D:\Advent of Code\22\Star2\Star2.cpp(143,19): warning C4305: '-=': truncation from 'const unsigned __int64' to 'size_t'
+D:\Advent of Code\22\Star2\Star2.cpp(147,20): warning C4305: '-=': truncation from 'const unsigned __int64' to 'size_t'
+D:\Advent of Code\22\Star2\Star2.cpp(50): warning C4715: 'ExtractLong': not all control paths return a value
   AoC.vcxproj -> D:\Advent of Code\22\Star2\Debug\AoC.exe

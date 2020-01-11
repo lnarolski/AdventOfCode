@@ -8,6 +8,7 @@
 #include <random>
 #include <conio.h>
 #include <sstream>
+#include <list>
 
 const unsigned long long numOfCards = 101741582076661;
 
@@ -48,53 +49,72 @@ long ExtractLong(std::string str)
 	}
 }
 
-std::vector <unsigned long long> DealIntoNewStack(std::vector <unsigned long long>* cards)
+std::list <unsigned long long> DealIntoNewStack(std::list <unsigned long long>* cards)
 {
-	std::vector <unsigned long long> newStack;
+	std::list <unsigned long long> newStack;
 
-	for (long long i = cards->size() - 1; i >= 0; --i)
+	for (auto i = cards->begin(); i != cards->end(); --i)
 	{
-		newStack.push_back(cards->at(i));
+		newStack.push_back(*i);
 	}
 
 	return newStack;
 }
 
-std::vector <unsigned long long> CutNCards(std::vector <unsigned long long>* cards, long* _parameterValue)
+std::list <unsigned long long> CutNCards(std::list <unsigned long long>* cards, long* _parameterValue)
 {
-	std::vector <unsigned long long> newStack;
+	std::list <unsigned long long> newStack;
+	size_t j;
 
 	if (*_parameterValue >= 0)
 	{
-		for (size_t i = *_parameterValue; i < cards->size(); ++i)
+		j = 0;
+		for (auto i = cards->begin(); i != cards->end(); ++i)
 		{
-			newStack.push_back(cards->at(i));
+			if (j >= *_parameterValue)
+			{
+				newStack.push_back(*i);
+			}
+
+			++j;
 		}
 
-		for (size_t i = 0; i < *_parameterValue; ++i)
+		j = 0;
+		for (auto i = cards->begin(); j < *_parameterValue; ++i)
 		{
-			newStack.push_back(cards->at(i));
+			newStack.push_back(*i);
+
+			++j;
 		}
 	}
 	else
 	{
-		for (size_t i = cards->size() + *_parameterValue; i < cards->size(); ++i)
+		j = 0;
+		for (auto i = cards->begin(); i != cards->end(); ++i)
 		{
-			newStack.push_back(cards->at(i));
+			if (j >= cards->size() + *_parameterValue)
+			{
+				newStack.push_back(*i);
+			}
+
+			++j;
 		}
 
-		for (size_t i = 0; i < cards->size() + *_parameterValue; ++i)
+		j = 0;
+		for (auto i = cards->begin(); j < cards->size() + *_parameterValue; ++i)
 		{
-			newStack.push_back(cards->at(i));
+			newStack.push_back(*i);
+
+			++j;
 		}
 	}
 
 	return newStack;
 }
 
-std::vector <unsigned long long> DealWithIncrementN(std::vector <unsigned long long>* cards, long* _parameterValue)
+std::list <unsigned long long> DealWithIncrementN(std::list <unsigned long long>* cards, long* _parameterValue)
 {
-	std::vector <unsigned long long> newStack;
+	std::list <unsigned long long> newStack;
 
 	for (long long i = 0; i < cards->size(); ++i)
 	{
@@ -103,24 +123,31 @@ std::vector <unsigned long long> DealWithIncrementN(std::vector <unsigned long l
 
 	size_t j = 0;
 	size_t k = 0;
+	size_t m = 0;
 	bool stop = false;
 	bool started = false;
-	while (!stop)
+	auto ii = newStack.begin();
+	for (auto i = cards->begin(); i != cards->end(); ++i)
 	{
-		if ((j % cards->size()) == 0)
+		while (m != j)
 		{
-			if (started)
-				stop = true;
-			else
-				started = true;
+			++m;
+			++ii;
 		}
-		if (!stop)
-		{
-			newStack[j % cards->size()] = cards->at(k);
-		}
+		*ii = *i;
 
-		++k;
 		j += *_parameterValue;
+
+		if (j >= numOfCards)
+		{
+			j -= numOfCards;
+			ii = newStack.begin();
+			while (j >= numOfCards)
+			{
+				j -= numOfCards;
+				ii = newStack.begin();
+			}
+		}
 	}
 
 	return newStack;
@@ -129,7 +156,7 @@ std::vector <unsigned long long> DealWithIncrementN(std::vector <unsigned long l
 int main(int argc, char* argv[])
 {
 	std::vector <command> shuffleTechniques;
-	std::vector <unsigned long long> cards;
+	std::list <unsigned long long> cards;
 
 	std::fstream input;
 	std::string fileLine;
@@ -182,17 +209,18 @@ int main(int argc, char* argv[])
 		}
 	}
 
-	size_t position;
-	for (size_t i = 0; i < cards.size(); ++i)
+	size_t position = 0;
+	for (auto i = cards.begin(); i != cards.end(); ++i)
 	{
-		if (cards[i] == 2020)
+		if (*i == 2020)
 		{
-			position = i;
 			break;
 		}
+
+		++position;
 	}
 
-	std::cout << "Position of card 2019: " << position << std::endl;
+	std::cout << "Position of card 2020: " << position << std::endl;
 
 	//for (size_t i = 0; i < cards.size(); i++)
 	//{
