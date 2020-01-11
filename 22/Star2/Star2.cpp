@@ -10,7 +10,8 @@
 #include <sstream>
 #include <list>
 
-const unsigned long long numOfCards = 101741582076661;
+const unsigned long long numOfCards = 119315717514047;
+const unsigned long long numOfRepeats = 101741582076661;
 
 enum technique
 {
@@ -53,8 +54,9 @@ std::list <unsigned long long> DealIntoNewStack(std::list <unsigned long long>* 
 {
 	std::list <unsigned long long> newStack;
 
-	for (auto i = cards->begin(); i != cards->end(); --i)
+	for (auto i = cards->end(); i != cards->begin();)
 	{
+		--i;
 		newStack.push_back(*i);
 	}
 
@@ -142,10 +144,10 @@ std::list <unsigned long long> DealWithIncrementN(std::list <unsigned long long>
 		{
 			j -= numOfCards;
 			ii = newStack.begin();
+			m = 0;
 			while (j >= numOfCards)
 			{
 				j -= numOfCards;
-				ii = newStack.begin();
 			}
 		}
 	}
@@ -191,28 +193,31 @@ int main(int argc, char* argv[])
 		cards.push_back(i);
 	}
 
-	for (size_t i = 0; i < shuffleTechniques.size(); ++i)
+	for (unsigned long long j = 0; j < numOfRepeats; ++j)
 	{
-		switch (shuffleTechniques[i]._technique)
+		for (size_t i = 0; i < shuffleTechniques.size(); ++i)
 		{
-		case deal_with_increment:
-			cards = DealWithIncrementN(&cards, &shuffleTechniques[i]._parameterValue);
-			break;
-		case cut:
-			cards = CutNCards(&cards, &shuffleTechniques[i]._parameterValue);
-			break;
-		case deal_into_new_stack:
-			cards = DealIntoNewStack(&cards);
-			break;
-		default:
-			break;
+			switch (shuffleTechniques[i]._technique)
+			{
+			case deal_with_increment:
+				cards = DealWithIncrementN(&cards, &shuffleTechniques[i]._parameterValue);
+				break;
+			case cut:
+				cards = CutNCards(&cards, &shuffleTechniques[i]._parameterValue);
+				break;
+			case deal_into_new_stack:
+				cards = DealIntoNewStack(&cards);
+				break;
+			default:
+				break;
+			}
 		}
 	}
 
 	size_t position = 0;
 	for (auto i = cards.begin(); i != cards.end(); ++i)
 	{
-		if (*i == 2020)
+		if (*i == 2019)
 		{
 			break;
 		}
