@@ -1,0 +1,94 @@
+﻿  Star2.cpp
+D:\Advent of Code\23\Star2\Star2.cpp(58,50): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\23\Star2\Star2.cpp(60,42): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\23\Star2\Star2.cpp(62,72): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\23\Star2\Star2.cpp(64,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\23\Star2\Star2.cpp(71,51): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\23\Star2\Star2.cpp(73,42): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\23\Star2\Star2.cpp(75,73): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\23\Star2\Star2.cpp(77,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\23\Star2\Star2.cpp(84,50): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\23\Star2\Star2.cpp(86,42): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\23\Star2\Star2.cpp(88,72): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\23\Star2\Star2.cpp(90,41): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\23\Star2\Star2.cpp(162,31): warning C4244: '=': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\23\Star2\Star2.cpp(170,31): warning C4244: '=': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\23\Star2\Star2.cpp(240,1): warning C4244: '+=': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\23\Star2\Star2.cpp(254,51): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\23\Star2\Star2.cpp(256,43): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\23\Star2\Star2.cpp(258,73): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\23\Star2\Star2.cpp(260,42): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\23\Star2\Star2.cpp(267,52): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\23\Star2\Star2.cpp(269,43): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\23\Star2\Star2.cpp(271,74): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\23\Star2\Star2.cpp(273,42): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\23\Star2\Star2.cpp(280,51): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\23\Star2\Star2.cpp(282,43): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Advent of Code\23\Star2\Star2.cpp(284,73): warning C4018: '>': signed/unsigned mismatch
+D:\Advent of Code\23\Star2\Star2.cpp(286,42): warning C4244: 'argument': conversion from '_Ty' to 'long', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+  Generating code
+  4 of 339 functions ( 1.2%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Star2.vcxproj -> D:\Advent of Code\23\Star2\x64\Release\Star2.exe
