@@ -1,0 +1,4 @@
+﻿  Star1.cpp
+D:\Advent of Code\24\Star1\Star1.cpp(127,21): warning C4018: '<': signed/unsigned mismatch
+D:\Advent of Code\24\Star1\Star1.cpp(162,16): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+  AoC.vcxproj -> D:\Advent of Code\24\Star1\Debug\AoC.exe
