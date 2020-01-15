@@ -13,7 +13,7 @@
 #include <map>
 #include <Windows.h>
 
-const size_t numOfMinutes = 11;
+const size_t numOfMinutes = 200;
 std::vector <std::vector <char>> emptyArea;
 std::vector <long long> levelsToAdd;
 
@@ -260,6 +260,23 @@ void PrintArea(std::vector <std::vector <char>>* area)
 	printf("\n");
 }
 
+void PrintAreas(std::map <long long, level*> *areas)
+{
+	for (size_t y = 0; y < emptyArea.size(); ++y)
+	{
+		for (auto it = areas->begin(); it != areas->end(); ++it)
+		{
+			for (size_t x = 0; x < emptyArea.size(); ++x)
+			{
+				printf("%c", it->second->GetArea()->at(y).at(x));
+			}
+			printf("\t");
+		}
+		printf("\n");
+	}
+	printf("\n\n");
+}
+
 int main(int argc, char* argv[])
 {
 	std::string buffer = "";
@@ -300,16 +317,6 @@ int main(int argc, char* argv[])
 
 	for (size_t i = 0; i < numOfMinutes; ++i)
 	{
-		//PrintArea(areas[0]->GetArea());
-
-		for (size_t j = 0; j < levelsToAdd.size(); ++j)
-		{
-			if (!LevelExist(levelsToAdd[j], &areas))
-			{
-				areas[levelsToAdd[j]] = new level(levelsToAdd[j]);
-			}
-		}
-
 		for (auto it = areas.begin(); it != areas.end(); ++it)
 		{
 			long long depth = it->first;
@@ -328,9 +335,37 @@ int main(int argc, char* argv[])
 			newAreas[depth]->SetArea(new std::vector <std::vector <char>>(newArea));
 		}
 
+		size_t temp = levelsToAdd.size();
+		for (size_t j = 0; j < temp; ++j)
+		{
+			if (!LevelExist(levelsToAdd[j], &areas))
+			{
+				long long depth = levelsToAdd[j];
+
+				areas[depth] = new level(levelsToAdd[j]);
+				areas[depth]->SetArea(new std::vector <std::vector <char>>(emptyArea));
+
+				for (size_t y = 0; y < emptyArea.size(); ++y)
+				{
+					for (size_t x = 0; x < emptyArea[0].size(); ++x)
+					{
+						if (areas[depth]->GetArea()->at(y).at(x) == '?')
+							continue;
+						newArea[y][x] = Run(&x, &y, &areas, &depth);
+					}
+				}
+
+				newAreas[depth] = new level(depth);
+				newAreas[depth]->SetArea(new std::vector <std::vector <char>>(newArea));
+			}
+		}
+
 		areas.clear();
 		areas = newAreas;
 		newAreas.clear();
+		levelsToAdd.clear();
+
+		//PrintAreas(&areas);
 	}
 
 	for (auto it = areas.begin(); it != areas.end(); ++it)

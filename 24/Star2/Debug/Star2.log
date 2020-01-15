@@ -1,3 +1,3 @@
 ﻿  Star2.cpp
-D:\Advent of Code\24\Star2\Star2.cpp(281,21): warning C4018: '<': signed/unsigned mismatch
+D:\Advent of Code\24\Star2\Star2.cpp(298,21): warning C4018: '<': signed/unsigned mismatch
   Star2.vcxproj -> D:\Advent of Code\24\Star2\Debug\Star2.exe
